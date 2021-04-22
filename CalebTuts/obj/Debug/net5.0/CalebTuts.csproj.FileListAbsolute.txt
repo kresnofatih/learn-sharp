@@ -1,0 +1,16 @@
+D:\Personal\PR\csharp\CalebTuts\CalebTuts\bin\Debug\net5.0\CalebTuts.exe
+D:\Personal\PR\csharp\CalebTuts\CalebTuts\bin\Debug\net5.0\CalebTuts.deps.json
+D:\Personal\PR\csharp\CalebTuts\CalebTuts\bin\Debug\net5.0\CalebTuts.runtimeconfig.json
+D:\Personal\PR\csharp\CalebTuts\CalebTuts\bin\Debug\net5.0\CalebTuts.runtimeconfig.dev.json
+D:\Personal\PR\csharp\CalebTuts\CalebTuts\bin\Debug\net5.0\CalebTuts.dll
+D:\Personal\PR\csharp\CalebTuts\CalebTuts\bin\Debug\net5.0\ref\CalebTuts.dll
+D:\Personal\PR\csharp\CalebTuts\CalebTuts\bin\Debug\net5.0\CalebTuts.pdb
+D:\Personal\PR\csharp\CalebTuts\CalebTuts\obj\Debug\net5.0\CalebTuts.csprojAssemblyReference.cache
+D:\Personal\PR\csharp\CalebTuts\CalebTuts\obj\Debug\net5.0\CalebTuts.GeneratedMSBuildEditorConfig.editorconfig
+D:\Personal\PR\csharp\CalebTuts\CalebTuts\obj\Debug\net5.0\CalebTuts.AssemblyInfoInputs.cache
+D:\Personal\PR\csharp\CalebTuts\CalebTuts\obj\Debug\net5.0\CalebTuts.AssemblyInfo.cs
+D:\Personal\PR\csharp\CalebTuts\CalebTuts\obj\Debug\net5.0\CalebTuts.csproj.CoreCompileInputs.cache
+D:\Personal\PR\csharp\CalebTuts\CalebTuts\obj\Debug\net5.0\CalebTuts.dll
+D:\Personal\PR\csharp\CalebTuts\CalebTuts\obj\Debug\net5.0\ref\CalebTuts.dll
+D:\Personal\PR\csharp\CalebTuts\CalebTuts\obj\Debug\net5.0\CalebTuts.pdb
+D:\Personal\PR\csharp\CalebTuts\CalebTuts\obj\Debug\net5.0\CalebTuts.genruntimeconfig.cache
