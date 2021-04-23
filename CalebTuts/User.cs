@@ -14,5 +14,11 @@ namespace CalebTuts
         // properties: gateway to our fields
         public string FirstName { get; set; }
         public string LastName { get; set; }
+
+        public void Output()
+        {
+            Console.WriteLine(FirstName);
+            Console.WriteLine(LastName);
+        }
     }
 }
