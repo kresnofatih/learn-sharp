@@ -12,7 +12,12 @@ namespace CalebTuts // a namespace - used for organization
             int number = 38;
             Console.WriteLine(number);//38
             AddFiveByReference(ref number);
-            Console.WriteLine(number);//38
+            Console.WriteLine(number);//43
+
+            int newNumber = 40;
+            Console.WriteLine(newNumber);//40
+            AddfiveByReferenceOut(out newNumber);
+            Console.WriteLine(newNumber);//5
         }
 
         static void AddFiveByReference(ref int number)// creates a new value (pass by value)
@@ -20,6 +25,12 @@ namespace CalebTuts // a namespace - used for organization
             //Console.WriteLine(number);//38
             number += 5;
             //Console.WriteLine(number);//43
+        }
+
+        static void AddfiveByReferenceOut(out int number)
+        {
+            number = 0;
+            number += 5;
         }
     }
 }
