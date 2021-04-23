@@ -9,20 +9,27 @@ namespace CalebTuts // a namespace - used for organization
             // this is creating the method, you will need to invoke a method later.
             // For Main, it will not require us to invoke
         {
-            int x = 5; // declaration initialization, the 5 is a literal
-            char characterC = 'c';
-            string stringHello = "Hello";
-            float floatNumber = 5.5f;
-            double doubleNumber = 8.5;
-            decimal decimalNumber = 4.5m;
-            bool status = true;
-            int y; // declaration
-            y = 8; // initialization
+            int number = -5; //value type
+            int newNumber = number; // value
 
-            Console.WriteLine(x + y + floatNumber + doubleNumber + (double)decimalNumber); // casting
-            Console.WriteLine(characterC);
-            Console.WriteLine(status);
-            Console.WriteLine(stringHello);
+            Console.WriteLine(number);//-5
+            Console.WriteLine(newNumber);//-5
+
+            number = 29;
+            Console.WriteLine(number);//29
+            Console.WriteLine(newNumber);//-5
+
+
+            int[] firstArray = { -7 };
+            int[] secondArray = firstArray;
+
+            Console.WriteLine(firstArray[0]);//-7
+            Console.WriteLine(secondArray[0]);//-7
+
+            firstArray[0] = 24;
+
+            Console.WriteLine(firstArray[0]);//24
+            Console.WriteLine(secondArray[0]);//24
         }
     }
 }
