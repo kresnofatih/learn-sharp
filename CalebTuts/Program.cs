@@ -20,7 +20,7 @@ namespace CalebTuts // a namespace - used for organization
             me.FirstName = "Kresno";
             me.LastName = "Fatih";
 
-            me.Output();
+            me.Output(4);
         }
     }
 }

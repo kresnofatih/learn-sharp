@@ -15,10 +15,13 @@ namespace CalebTuts
         public string FirstName { get; set; }
         public string LastName { get; set; }
 
-        public void Output()
+        public void Output(int timesToOutput)
         {
-            Console.WriteLine(FirstName);
-            Console.WriteLine(LastName);
+            for(int i=0; i<timesToOutput; i++)
+            {
+                Console.WriteLine(FirstName);
+                Console.WriteLine(LastName);
+            }
         }
     }
 }
