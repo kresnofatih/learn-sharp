@@ -9,36 +9,17 @@ namespace CalebTuts // a namespace - used for organization
             // this is creating the method, you will need to invoke a method later.
             // For Main, it will not require us to invoke
         {
-            int number = -5; //value type
-            int newNumber = number; // value
-
-            Console.WriteLine(number);//-5
-            Console.WriteLine(newNumber);//-5
-
-            number = 29;
-            Console.WriteLine(number);//29
-            Console.WriteLine(newNumber);//-5
-
-
-            int[] firstArray = { -7 };
-            int[] secondArray = firstArray;
-
-            Console.WriteLine(firstArray[0]);//-7
-            Console.WriteLine(secondArray[0]);//-7
-
-            firstArray[0] = 24;
-
-            Console.WriteLine(firstArray[0]);//24
-            Console.WriteLine(secondArray[0]);//24
-
-            int[] a = {9};
-            RewriteByReference(a);
-            Console.WriteLine(a[0]);
+            int number = 38;
+            Console.WriteLine(number);//38
+            AddFiveByReference(ref number);
+            Console.WriteLine(number);//38
         }
 
-        static void RewriteByReference(int[] x) // takes in the reference so the value can be changed
+        static void AddFiveByReference(ref int number)// creates a new value (pass by value)
         {
-            x[0] = 100;
+            //Console.WriteLine(number);//38
+            number += 5;
+            //Console.WriteLine(number);//43
         }
     }
 }
