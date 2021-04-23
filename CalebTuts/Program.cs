@@ -9,22 +9,11 @@ namespace CalebTuts // a namespace - used for organization
             // this is creating the method, you will need to invoke a method later.
             // For Main, it will not require us to invoke
         {
-            Person person = new Person();
-            person.FirstName = "Kresno";
-            person.LastName = "Fatih";
+            int a = 39;
+            bool isCorrect = a > 3 ? true : false;
+            Console.WriteLine(isCorrect);
 
-            string fullNameGuess = Console.ReadLine();
-
-            if (fullNameGuess == person.GetFullName())
-            {
-                Console.WriteLine("Awesome");
-            } else if(fullNameGuess == "Irham Isa" || fullNameGuess == "Zaki Fadhil")
-            {
-                Console.WriteLine("Awesome Too");
-            } else
-            {
-                Console.WriteLine("You Suck");
-            }
+            if (a > 3) Console.WriteLine("a>3");
         }
     }
 }
