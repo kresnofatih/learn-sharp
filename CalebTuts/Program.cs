@@ -10,19 +10,29 @@ namespace CalebTuts // a namespace - used for organization
             // For Main, it will not require us to invoke
         {
             // arrays
-            int[] grades = new int[10];
-            for(int a = 0; a<10; a++)
-            {
-                grades[a] = a * 10;
-            }
+            int[,] grades = new int[5, 3];
+            grades[0, 2] = 8;
+            //Console.WriteLine(grades[0, 2]);
 
-            int[] numbers = { 0, 1, 2, 3, 4 };
-            Console.WriteLine(numbers.Length);
-            for(int a=0; a <numbers.Length; a++)
+            int[,] numbers = {// 2d array
+                { 1, 2 }, 
+                { 2, 3 }, 
+                { 4, 2 }
+            };
+            Console.WriteLine(numbers[0, 1]);
+            Console.WriteLine(numbers.GetLength(0));//row=3
+            Console.WriteLine(numbers.GetLength(1));//col=2
+
+            int[][] newNumbers = // jagged arrays
             {
-                Console.WriteLine(numbers[a]);
-            }
-            Console.WriteLine(Array.IndexOf(numbers, 3));
+                new int[]{3, 4,5},
+                new int[]{2,3,1,7}
+            };
+
+            Console.WriteLine(newNumbers.Length);//2
+            Console.WriteLine(newNumbers[0].Length);// 3
+            Console.WriteLine(newNumbers[1].Length);// 4
+
         }
     }
 }
