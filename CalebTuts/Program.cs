@@ -9,11 +9,24 @@ namespace CalebTuts // a namespace - used for organization
             // this is creating the method, you will need to invoke a method later.
             // For Main, it will not require us to invoke
         {
-            int a = 39;
-            bool isCorrect = a > 3 ? true : false;
-            Console.WriteLine(isCorrect);
+            int a = 0;
+            while (a < 10)
+            {
+                a += 1;
+                Console.WriteLine(a);
+            }
 
-            if (a > 3) Console.WriteLine("a>3");
+            int b = 0;
+            do
+            {
+                b += 1;
+                Console.WriteLine(b);
+            } while (b < 10);
+
+            for(int c = 0; c<10; c++)
+            {
+                Console.WriteLine(c+1);
+            }
         }
     }
 }
