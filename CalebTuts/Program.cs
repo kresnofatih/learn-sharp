@@ -1,4 +1,5 @@
 ﻿using System; // imports all library
+using System.Collections.Generic;
 
 namespace CalebTuts // a namespace - used for organization
 {
@@ -9,30 +10,17 @@ namespace CalebTuts // a namespace - used for organization
             // this is creating the method, you will need to invoke a method later.
             // For Main, it will not require us to invoke
         {
-            // arrays
-            int[,] grades = new int[5, 3];
-            grades[0, 2] = 8;
-            //Console.WriteLine(grades[0, 2]);
+            // lists
+            List<int> grades = new List<int>() { 5, 19 };
+            grades.Add(20);
+            grades.Insert(2, 15);
 
-            int[,] numbers = {// 2d array
-                { 1, 2 }, 
-                { 2, 3 }, 
-                { 4, 2 }
-            };
-            Console.WriteLine(numbers[0, 1]);
-            Console.WriteLine(numbers.GetLength(0));//row=3
-            Console.WriteLine(numbers.GetLength(1));//col=2
+            Console.WriteLine(grades[0]); //5
+            Console.WriteLine(grades[1]);//19
+            Console.WriteLine(grades[2]);//15
+            Console.WriteLine(grades[3]);//20
 
-            int[][] newNumbers = // jagged arrays
-            {
-                new int[]{3, 4,5},
-                new int[]{2,3,1,7}
-            };
-
-            Console.WriteLine(newNumbers.Length);//2
-            Console.WriteLine(newNumbers[0].Length);// 3
-            Console.WriteLine(newNumbers[1].Length);// 4
-
+            grades.Clear();
         }
     }
 }
