@@ -11,15 +11,16 @@ namespace CalebTuts // a namespace - used for organization
         // For Main, it will not require us to invoke
         {
             Program myProgram = new Program(); //instantiate
-            myProgram.printName();
+            myProgram.PrintName();
         }
 
-        public void printName()
+        public void PrintName()
         {
             User me = new User();
-            me.Name = "Kresno Fatih";
+            me.FirstName = "Kresno";
+            me.LastName = "Fatih";
 
-            Console.WriteLine(me.Name);
+            Console.WriteLine(me.FirstName + " " + me.LastName);
         }
     }
 }

@@ -9,7 +9,10 @@ namespace CalebTuts
     public class User
     {
         // fields: defined at the class level (not the recommended way to store information)
-        public string Name;
+        //string firstName;
 
+        // properties: gateway to our fields
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
     }
 }
