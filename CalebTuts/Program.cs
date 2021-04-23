@@ -9,15 +9,8 @@ namespace CalebTuts // a namespace - used for organization
             // this is creating the method, you will need to invoke a method later.
             // For Main, it will not require us to invoke
         {
-            Console.WriteLine("Hello World!2"); // this is a statement, this is a static method of class Console
-            Program myProgram = new Program(); // creating an instance of myProgram
-            myProgram.Print();  // invoking a new method
-        }
-
-        void Print()
-        {
-            Console.WriteLine("Fatih"); // this is a statement
-            Console.WriteLine("Irham Zaki Fatih sukses dunia akhirat amin yra"); // this is a statement
+            var inputName = Console.ReadLine(); // like c++ std::cin command
+            Console.WriteLine($"Hello {inputName}! Bismillah!");
         }
     }
 }
