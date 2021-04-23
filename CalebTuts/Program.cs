@@ -47,6 +47,11 @@ namespace CalebTuts // a namespace - used for organization
                 }
                 Console.WriteLine();
             }
+
+            int[] myArr = grades.ToArray();// convert to array
+
+            //sort
+            grades.Reverse(); // 20 15 19 5
         }
     }
 }
