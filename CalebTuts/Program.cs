@@ -9,28 +9,18 @@ namespace CalebTuts // a namespace - used for organization
             // this is creating the method, you will need to invoke a method later.
             // For Main, it will not require us to invoke
         {
-            int number = 38;
-            Console.WriteLine(number);//38
-            AddFiveByReference(ref number);
-            Console.WriteLine(number);//43
+            Int32 x = 5; // .Net framework variables
+            int y = (int) 3.99;// rounds down to 3
+            Console.WriteLine(x);//5
+            Console.WriteLine(y);//3
 
-            int newNumber = 40;
-            Console.WriteLine(newNumber);//40
-            AddfiveByReferenceOut(out newNumber);
-            Console.WriteLine(newNumber);//5
-        }
+            float z = 5.5f; // float literals is different
+            double p = 5.5; // bigger information
+            decimal q = 39.4M; // double literals
+            double r = double.NaN;
 
-        static void AddFiveByReference(ref int number)// creates a new value (pass by value)
-        {
-            //Console.WriteLine(number);//38
-            number += 5;
-            //Console.WriteLine(number);//43
-        }
-
-        static void AddfiveByReferenceOut(out int number)
-        {
-            number = 0;
-            number += 5;
+            Console.WriteLine(double.IsNaN(p));
+            Console.WriteLine(double.IsNaN(r));
         }
     }
 }
