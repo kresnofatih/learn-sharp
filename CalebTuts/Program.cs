@@ -9,20 +9,20 @@ namespace CalebTuts // a namespace - used for organization
             // this is creating the method, you will need to invoke a method later.
             // For Main, it will not require us to invoke
         {
-            for(int a = 0; a<5; a++)
+            // arrays
+            int[] grades = new int[10];
+            for(int a = 0; a<10; a++)
             {
-                for(int b = 0; b<=5; b++)
-                {
-                    if (b != a)
-                    {
-                        Console.Write("o");
-                    } else
-                    {
-                        Console.WriteLine("o");
-                        break;
-                    }
-                }
+                grades[a] = a * 10;
             }
+
+            int[] numbers = { 0, 1, 2, 3, 4 };
+            Console.WriteLine(numbers.Length);
+            for(int a=0; a <numbers.Length; a++)
+            {
+                Console.WriteLine(numbers[a]);
+            }
+            Console.WriteLine(Array.IndexOf(numbers, 3));
         }
     }
 }
