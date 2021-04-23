@@ -12,6 +12,11 @@ namespace CalebTuts // a namespace - used for organization
         {
             // lists
             List<int> grades = new List<int>() { 5, 19 };
+            List<List<int>> nestedLists = new List<List<int>>()
+            {
+                new List<int>{5, 6, 7},
+                new List<int>{34, 20, 39, 28}
+            };
             grades.Add(20);
             grades.Insert(2, 15);
 
@@ -32,6 +37,15 @@ namespace CalebTuts // a namespace - used for organization
             foreach (int grade in grades)
             {
                 Console.WriteLine(grade);
+            }
+
+            foreach(List<int> nestedList in nestedLists)
+            {
+                foreach(int num in nestedList)
+                {
+                    Console.Write(num+" ");
+                }
+                Console.WriteLine();
             }
         }
     }
