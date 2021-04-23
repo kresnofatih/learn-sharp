@@ -12,7 +12,19 @@ namespace CalebTuts // a namespace - used for organization
             Person person = new Person();
             person.FirstName = "Kresno";
             person.LastName = "Fatih";
-            Console.WriteLine(person.GetFullName()); // Kresno Fatih
+
+            string fullNameGuess = Console.ReadLine();
+
+            if (fullNameGuess == person.GetFullName())
+            {
+                Console.WriteLine("Awesome");
+            } else if(fullNameGuess == "Irham Isa" || fullNameGuess == "Zaki Fadhil")
+            {
+                Console.WriteLine("Awesome Too");
+            } else
+            {
+                Console.WriteLine("You Suck");
+            }
         }
     }
 }
