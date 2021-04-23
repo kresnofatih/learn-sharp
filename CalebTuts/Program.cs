@@ -30,6 +30,15 @@ namespace CalebTuts // a namespace - used for organization
 
             Console.WriteLine(firstArray[0]);//24
             Console.WriteLine(secondArray[0]);//24
+
+            int[] a = {9};
+            RewriteByReference(a);
+            Console.WriteLine(a[0]);
+        }
+
+        static void RewriteByReference(int[] x) // takes in the reference so the value can be changed
+        {
+            x[0] = 100;
         }
     }
 }
