@@ -15,6 +15,16 @@ namespace CalebTuts
         public string FirstName { get; set; }
         public string LastName { get; set; }
 
+        public string PrintFullName()
+        {
+            string message = "";
+            message += FirstName;
+            message += " ";
+            message += LastName;
+
+            return message;
+        }
+
         public void Output(int timesToOutput)
         {
             for(int i=0; i<timesToOutput; i++)
