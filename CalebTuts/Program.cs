@@ -9,8 +9,20 @@ namespace CalebTuts // a namespace - used for organization
             // this is creating the method, you will need to invoke a method later.
             // For Main, it will not require us to invoke
         {
-            var inputName = Console.ReadLine(); // like c++ std::cin command
-            Console.WriteLine($"Hello {inputName}! Bismillah!");
+            int x = 5; // declaration initialization, the 5 is a literal
+            char characterC = 'c';
+            string stringHello = "Hello";
+            float floatNumber = 5.5f;
+            double doubleNumber = 8.5;
+            decimal decimalNumber = 4.5m;
+            bool status = true;
+            int y; // declaration
+            y = 8; // initialization
+
+            Console.WriteLine(x + y + floatNumber + doubleNumber + (double)decimalNumber); // casting
+            Console.WriteLine(characterC);
+            Console.WriteLine(status);
+            Console.WriteLine(stringHello);
         }
     }
 }
