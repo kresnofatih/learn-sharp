@@ -59,5 +59,13 @@ namespace CalebTuts
         {
             Console.WriteLine(user.FullName);
         }
+
+        public static void PrintListOfUserFullName(List<User> users)
+        {
+            foreach(User user in users)
+            {
+                Console.WriteLine(user.FullName);
+            }
+        }
     }
 }
