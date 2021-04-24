@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace CalebTuts
 {
-    public class User
+    public abstract class User
     {
+        // abstract keyword is for preventing other developers from creating a User class directly
         public string FullName
         {
             get
@@ -19,9 +20,14 @@ namespace CalebTuts
         public string FirstName { get; set; } = "FirstName";
         public string LastName { get; set; } = "LastName";
         public bool Verified { get; set; } = false; // by default the property value is false
+        /*
         public virtual void SayHello()
         {
             Console.WriteLine("Hello, I'm "+FirstName);
         }
+        */
+
+        public abstract void SayHello();
+        // abstract keyword makes overriding this method compulsory in the derivative method
     }
 }
