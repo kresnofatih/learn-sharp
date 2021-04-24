@@ -67,5 +67,22 @@ namespace CalebTuts
                 Console.WriteLine(user.FullName);
             }
         }
+
+        public string IntroduceYourself(string homeTown="Tokyo, Japan")// instead of overloading, use default values
+        {
+            return "My name is " + FullName+". I am from "+homeTown;
+        }
+
+        public static bool FindUser(List<User> users, string fullName)
+        {
+            foreach(User user in users)
+            {
+                if(user.FullName == fullName)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
     }
 }
