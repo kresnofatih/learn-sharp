@@ -12,8 +12,14 @@ namespace CalebTuts
         {
             Console.WriteLine("Creating a student");// will be executed when constructor is stated
         }
-        
-        
+
+        public Student(string firstName, string lastName) // constructor overloaded with the one with parameters
+        {
+            FirstName = firstName;
+            LastName = lastName;
+        }
+
+
         // will show error if the abstract method of its parent is not implemented in this class
         public override void SayHello()
         {
