@@ -16,15 +16,18 @@ namespace CalebTuts // a namespace - used for organization
 
         public void PrintName()
         {
-            User me = new User();
-            me.LastName = "Imani";
-            //me.FirstName = "Kresno"; // will set the firstname to default value
-            Console.WriteLine(me.ReturnFullName()); // fatih imani
-
             User you = new User();
-            you.FirstName = "Irham";// will override the firstname default value to Irham
-            you.LastName = "Zaki"; 
-            Console.WriteLine(you.ReturnFullName()); // irham Zaki
+            you.FirstName = "Kresno";// will override the firstname default value to Irham
+            you.LastName = "Fatih";
+            Console.WriteLine(you.FullName); // kresno fatih
+
+            User me = new User();
+            me.FullName = "Kresno Fatih";
+            Console.WriteLine(you.FullName); // kresno fatih
+
+            User him = new User();
+            him.FullName = "Fatih";
+            Console.WriteLine(him.FullName); // fatih fatih
         }
     }
 }

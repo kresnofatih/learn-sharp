@@ -9,7 +9,8 @@ namespace CalebTuts
     public class User
     {
         // fields: defined at the class level (not the recommended way to store information)
-        string _firstName = "FATIH";
+        string _firstName = "FirstName";
+        string _lastName = "LastName";
 
         // properties: gateway to our fields
         public string FirstName
@@ -23,24 +24,34 @@ namespace CalebTuts
                 _firstName = value.ToLower();
             }
         } // if get & set is not a set of code, autoamtically creates a field, if set, then it connects to a field
-        public string LastName { get; set; }
-
-        public string ReturnFullName()
+        public string LastName
         {
-            string message = "";
-            message += FirstName;
-            message += " ";
-            message += LastName;
-
-            return message;
-        }
-
-        public void Output(int timesToOutput)
-        {
-            for(int i=0; i<timesToOutput; i++)
+            get
             {
-                Console.WriteLine(FirstName);
-                Console.WriteLine(LastName);
+                return _lastName;
+            }
+            set
+            {
+                _lastName = value.ToLower();
+            }
+        }
+        public string FullName
+        {
+            get
+            {
+                return FirstName + " " + LastName;
+            }
+            set
+            {
+                if(value.Split(" ").Length > 1)
+                {
+                    _firstName = value.Split(" ")[0].ToLower();
+                    _lastName = value.Split(" ")[1].ToLower();
+                } else
+                {
+                    _firstName = value.ToLower();
+                    _lastName = value.ToLower();
+                }
             }
         }
     }
