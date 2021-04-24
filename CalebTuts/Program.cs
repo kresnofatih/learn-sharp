@@ -17,11 +17,10 @@ namespace CalebTuts // a namespace - used for organization
         public void PrintName()
         {
             User me = new User();
-            me.FirstName = "Kresno";
-            me.LastName = "Fatih";
+            me.LastName = "Imani";
 
-            me.Output(4);
-            Console.Write(me.PrintFullName());
+            me.Output(1);
+            Console.Write(me.ReturnFullName());
         }
     }
 }

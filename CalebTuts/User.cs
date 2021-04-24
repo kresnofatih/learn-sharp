@@ -9,13 +9,19 @@ namespace CalebTuts
     public class User
     {
         // fields: defined at the class level (not the recommended way to store information)
-        //string firstName;
+        string _firstName = "FATIH";
 
         // properties: gateway to our fields
-        public string FirstName { get; set; }
+        public string FirstName
+        {
+            get
+            {
+                return _firstName.ToLower();
+            }
+        } // if get & set is not a set of code, autoamtically creates a field, if set, then it connects to a field
         public string LastName { get; set; }
 
-        public string PrintFullName()
+        public string ReturnFullName()
         {
             string message = "";
             message += FirstName;
