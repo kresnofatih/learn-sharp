@@ -8,6 +8,10 @@ namespace CalebTuts
 {
     public abstract class User
     {
+        public User()
+        {
+            Console.WriteLine("Creating a User"); // will be executed by all derivate class constructor functions
+        }
         // abstract keyword is for preventing other developers from creating a User class directly
         public string FullName
         {

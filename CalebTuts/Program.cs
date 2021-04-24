@@ -16,12 +16,12 @@ namespace CalebTuts // a namespace - used for organization
 
         public void DoSomething()
         {
-            Student me = new Student();
+            Student me = new Student(); // uses the custom constructor method
             me.FirstName = "Kresno";
             me.LastName = "Fatih";
             me.Verified = true;
 
-            Teacher you = new Teacher();
+            Teacher you = new Teacher(); // uses default contructor method
             you.FirstName = "Michael";
             you.LastName = "Jordan";
 
