@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace CalebTuts
 {
-    public class Student : User
+    public class Student : User, ITalk // inheriting an interface determines the methods compulsory to implement
     {
         public Student()
         {
             Console.WriteLine("Creating a student");// will be executed when constructor is stated
         }
 
-        public Student(string firstName, string lastName) // constructor overloaded with the one with parameters
+        public Student(string firstName, string lastName) : base(firstName, lastName) // inherits properties of user
+        // constructor overloaded with the one with parameters
         {
-            FirstName = firstName;
-            LastName = lastName;
+
         }
 
 

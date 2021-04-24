@@ -22,8 +22,8 @@ namespace CalebTuts // a namespace - used for organization
             me.Verified = true;
 
             Teacher you = new Teacher(); // uses default contructor method
-            you.FirstName = "Michael";
-            you.LastName = "Jordan";
+            //you.FirstName = "Michael";
+            //you.LastName = "Jordan";
 
             List<User> users = new List<User>() { me, you };
 
