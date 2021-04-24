@@ -46,6 +46,8 @@ namespace CalebTuts // a namespace - used for organization
 
             takeUser(me);
             Console.WriteLine(me.FullName);//jamesfatih
+
+            User.PrintUserFullName(me);// for static methods are implemented on the class directly
         }
 
         public void takeUser(User user)

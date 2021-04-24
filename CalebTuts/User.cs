@@ -54,5 +54,10 @@ namespace CalebTuts
                 }
             }
         }
+
+        public static void PrintUserFullName(User user)
+        {
+            Console.WriteLine(user.FullName);
+        }
     }
 }
