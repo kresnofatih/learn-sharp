@@ -16,7 +16,11 @@ namespace CalebTuts
         {
             get
             {
-                return _firstName.ToLower();
+                return _firstName;
+            }
+            set
+            {
+                _firstName = value.ToLower();
             }
         } // if get & set is not a set of code, autoamtically creates a field, if set, then it connects to a field
         public string LastName { get; set; }
