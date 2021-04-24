@@ -28,6 +28,29 @@ namespace CalebTuts // a namespace - used for organization
             User him = new User();
             him.FullName = "Fatih";
             Console.WriteLine(him.FullName); // fatih fatih
+
+            Console.WriteLine("");
+
+            List<User> users = new List<User>();
+            users.Add(me);
+            users.Add(you);
+            users.Add(him);
+
+            foreach(User user in users)
+            {
+                Console.WriteLine(user.FullName);
+                //kresno fatih
+                //kresno fatih
+                //fatih fatih
+            }
+
+            takeUser(me);
+            Console.WriteLine(me.FullName);//jamesfatih
+        }
+
+        public void takeUser(User user)
+        {
+            user.FirstName = "James";
         }
     }
 }
