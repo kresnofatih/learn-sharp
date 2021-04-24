@@ -21,6 +21,7 @@ namespace CalebTuts // a namespace - used for organization
             me.LastName = "Fatih";
             me.Verified = true;
             Console.WriteLine(me.FullName);
+            me.SayHello();
         }
     }
 }

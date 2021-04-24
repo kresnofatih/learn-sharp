@@ -8,6 +8,9 @@ namespace CalebTuts
 {
     public class Student : User
     {
-
+        public override void SayHello()
+        {
+            Console.WriteLine("Hello, I'm a student. My name is " + FullName);
+        }
     }
 }
