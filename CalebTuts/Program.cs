@@ -20,8 +20,17 @@ namespace CalebTuts // a namespace - used for organization
             me.FirstName = "Kresno";
             me.LastName = "Fatih";
             me.Verified = true;
-            Console.WriteLine(me.FullName);
-            me.SayHello();
+
+            Teacher you = new Teacher();
+            you.FirstName = "Michael";
+            you.LastName = "Jordan";
+
+            List<User> users = new List<User>() { me, you };
+
+            foreach (User user in users)
+            {
+                user.SayHello();//does different sayhello methods (polymorphism)
+            }
         }
     }
 }
